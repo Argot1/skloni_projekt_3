@@ -1,0 +1,438 @@
+body {
+    background-color: black;
+    color: antiquewhite;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+footer {
+    padding: 5em;
+    background-color: rgb(31, 31, 31);
+    font-size: medium;
+    text-align: center;
+    margin-top: 0.1em;
+}
+
+h2 {
+    text-align: center;
+}
+
+a {
+    color: yellow;
+}
+
+.menu a {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1920px) {
+    .hlava {
+        background-image: url("../img/pozadi3.png");
+        padding: 5em;
+        text-align: center;
+    }
+
+
+
+    .mtvlogo {
+        width: 400px;
+        height: auto;
+        margin: auto;
+        text-align: center;
+
+    }
+
+    .a {
+        background-image: url("../img/pozadi_t_2.png");
+        width: 90%;
+        margin: 0.5em auto;
+        border: 5px solid antiquewhite;
+        padding: 2em;
+        border-radius: 2em;
+
+    }
+
+    .b {
+        background-image: url("../img/pozadi_t_2.png");
+        width: 90%;
+        margin: 0.5em auto;
+        border: 5px solid antiquewhite;
+        padding: 2em;
+        border-radius: 2em;
+
+    }
+
+    .c {
+        background-image: url("../img/pozadi_t_2.png");
+        width: 90%;
+        margin: 0.5em auto;
+        border: 5px solid antiquewhite;
+        padding: 2em;
+        border-radius: 2em;
+
+    }
+
+    .obal_a {}
+
+    .obal_b {
+        margin-top: -10em;
+    }
+
+    .obal_c {
+        margin-top: -10em;
+    }
+
+
+
+    * {
+        line-height: 1.5em;
+        font-size: large;
+
+    }
+
+    h2 {
+        font-size: 1.75em;
+    }
+
+    .container {
+        display: flex;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 2em;
+    }
+
+    .menu a {
+        border: 2px solid transparent;
+        background-color: black;
+        color: #eee;
+        border-radius: 1em;
+        width: 10em;
+        padding: 1em;
+        text-align: center;
+        position: relative;
+        top: 3em;
+        transition: border-width 0.3s ease;
+        margin: auto;
+
+
+    }
+
+
+
+    .menu a:hover {
+        transform: scale(1.2);
+    }
+
+    .menu_b {
+        border: 3px solid antiquewhite;
+        padding: 0.1em;
+        border-radius: 1em;
+        background-image: url(../img/pozadi2.png);
+        margin: 3em auto;
+        width: fit-content;
+        height: fit-content;
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .menu_b a {
+
+        color: azure;
+        font-size: larger;
+        border: 3px solid rgb(48, 48, 48);
+        border-radius: 0.25em;
+        background-color: rgb(0, 0, 0);
+        padding: 0.25em;
+        width: fit-content;
+        margin: 1em;
+        text-decoration: none;
+        text-align: center;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .menu_b a:hover {
+        transform: scale(1.2);
+    }
+
+    .daria_a {
+        width: 450px;
+        height: auto;
+        border-radius: 5px;
+        margin: auto;
+        transform:  scaleX(-1);
+        transition: transform 0.5s ease-in-out;
+        display: block;
+
+        margin-top: 1em;
+        margin-bottom: 13em;
+
+
+    }
+
+    .daria_a:hover {
+
+        transform: scaleX(-1) scaleY(1.2);
+
+
+    }
+
+    .alex_a {
+        width: 450px;
+        height: auto;
+        border-radius: 5px; 
+        transition: transform 0.5s ease-in-out;
+        margin-top: 2em;
+        margin-bottom:11em ;
+        position: relative;
+        left: 5em;
+
+    }
+
+    .alex_a:hover {
+
+        transform: scale(1.2);
+
+
+    }
+
+    .beavis_a {
+        width: 450px;
+        height: auto;
+        border-radius: 5px;
+        transition: transform 0.5s ease-in-out;
+        margin-top: 2em;
+        margin-bottom:3em ;
+        position: relative;
+        left: 10em;
+
+    }
+
+    .beavis_a:hover {
+
+        transform: scaleX(1.5);
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+@media screen and (min-width: 768px) {
+    .hlava {
+        background-image: url("../img/pozadi3.png");
+        padding: 5em;
+        text-align: center;
+    }
+
+
+
+    .mtvlogo {
+        width: 400px;
+        height: auto;
+        margin: auto;
+        text-align: center;
+
+    }
+
+    .a {
+        background-image: url("../img/pozadi_t_2.png");
+        width: 29%;
+        margin: 3em auto;
+        border: 5px solid antiquewhite;
+        padding: 2em;
+        border-radius: 2em;
+
+    }
+
+    .obal_a {}
+
+    .obal_b {
+        margin-top: -15em;
+    }
+
+    .obal_c {
+        margin-top: -15em;
+    }
+
+    .b {
+        background-image: url("../img/pozadi_t_2.png");
+        width: 60%;
+        margin: 6em;
+        border: 5px solid antiquewhite;
+        padding: 2em;
+        border-radius: 2em;
+
+    }
+
+    .c {
+        background-image: url("../img/pozadi_t_2.png");
+        width: 40%;
+        margin: 3em auto;
+        border: 5px solid antiquewhite;
+        padding: 2em;
+        border-radius: 2em;
+
+    }
+
+    * {
+        line-height: 1.5em;
+        font-size: large;
+
+    }
+
+    h2 {
+        font-size: 1.75em;
+    }
+
+    .container {
+        display: flex;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        gap: 2em;
+    }
+
+    .menu a {
+        border: 2px solid transparent;
+        background-color: black;
+        color: #eee;
+        border-radius: 1em;
+        width: 10em;
+        padding: 1em;
+        text-align: center;
+        position: relative;
+        top: 3em;
+        transition: border-width 0.3s ease;
+        margin: auto;
+
+
+    }
+
+
+
+    .menu a:hover {
+        transform: scale(1.2);
+    }
+
+    .menu_b {
+        border: 3px solid antiquewhite;
+        padding: 1em;
+        border-radius: 1em;
+        background-image: url(../img/pozadi2.png);
+        margin: 3em;
+        width: fit-content;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        left: 78%;
+        top: 35em;
+
+    }
+
+    .menu_b a {
+
+        color: azure;
+        font-size: larger;
+        border: 3px solid rgb(48, 48, 48);
+        border-radius: 0.25em;
+        background-color: rgb(0, 0, 0);
+        padding: 0.25em;
+        width: 90%;
+        text-decoration: none;
+        text-align: center;
+        transition: transform 0.5s ease-in-out;
+        margin: auto;
+    }
+
+    .menu_b a:hover {
+        transform: scale(1.2);
+    }
+
+    .daria_a {
+        width: 450px;
+        height: auto;
+        position: relative;
+        left: -15%;
+        top: -20em;
+        border-radius: 5px;
+        transform: translate(-50%, -50%) scaleX(-1);
+        transition: transform 0.5s ease-in-out;
+
+    }
+
+    .daria_a:hover {
+
+        transform: translate(-50%, -50%) scaleX(-1) scaleY(1.2);
+
+
+    }
+
+    .alex_a {
+        width: 450px;
+        height: auto;
+        position: relative;
+        left: 80%;
+        top: -35em;
+        border-radius: 5px;
+        transform: translate(-50%, -50%);
+        transition: transform 0.5s ease-in-out;
+
+    }
+
+    .alex_a:hover {
+
+        transform: translate(-50%, -50%) scale(1.2);
+
+
+    }
+
+    .beavis_a {
+        width: 450px;
+        height: auto;
+        position: relative;
+        left: 23%;
+        top: -13em;
+        border-radius: 5px;
+        transform: translate(-50%, -50%);
+        transition: transform 0.5s ease-in-out;
+
+    }
+
+    .beavis_a:hover {
+
+        transform: translate(-50%, -50%) scaleX(1.5);
+
+    }
+
+
+
+
+
+
+}

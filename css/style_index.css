@@ -1,0 +1,400 @@
+footer {
+    padding: 5em;
+    background-color: rgb(31, 31, 31);
+    font-size: medium;
+    text-align: center;
+    margin-top: 0.1em;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.mtvlogo {
+    text-align: center;
+    margin: auto;
+
+
+}
+.menu a{text-decoration: none;}
+body {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.5;
+}
+
+h3 {
+    text-align: center;
+}
+
+header {
+    background-image: url("../img/mtvbackground.png");
+
+}
+
+.historie {
+    background-image: url("../img/mojepozadi.png");
+}
+
+a {
+    text-decoration: none;
+    color: #eee;
+}
+
+
+
+@media screen and (max-width: 1920px) {
+    body {
+        font-size: large;
+
+    }
+
+    .mtvlogo {
+        width: 320px;
+        height: auto;
+
+    }
+
+    header {
+        padding: 6em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+
+
+
+
+    .info {
+        background-color: rgb(0, 247, 255);
+        padding: 1em;
+        border-radius: 2em;
+        width: 90%;
+        margin: 5% auto;
+
+        border: 5px dashed rgb(0, 171, 250);
+        color: rgb(211, 24, 117);
+    }
+
+    .rodic {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    .mtvlogo2 {
+        width: 300px;
+        height: auto;
+    }
+
+    .obal {
+        border: 5px pink solid;
+        width: 95%;
+        padding: 2em;
+        margin: 3em auto;
+        border-radius: 2em;
+        background-image: url("../img/pozadi4.png");
+        position: relative;
+        top: 1em;
+    }
+
+    .tvroba {
+        background-color: rgb(165, 106, 219);
+        padding: 1em;
+        border-radius: 2em;
+        width: 90%;
+        margin: 1% auto;
+        border: 5px dashed rgb(128, 76, 176);
+
+    }
+
+    .vliv {
+        background-color: rgb(112, 28, 191);
+        padding: 1em;
+        border-radius: 2em;
+        width: 80%;
+        margin: 5em auto;
+        border: 5px dashed rgb(97, 24, 165);
+    }
+
+    .a,
+    .b,
+    .c {
+        background-color: rgb(93, 18, 163);
+        padding: 1em;
+        margin: 0.5em auto;
+        border-radius: 2.25em;
+        width: 88%;
+        border: 5px dashed antiquewhite;
+    }
+
+
+
+    .historie {
+        width: 94%;
+        border-radius: 1em;
+        margin: auto;
+        padding: 3em;
+        margin-top: 0.1em;
+
+    }
+
+
+
+
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 2em;
+    }
+
+    .menu a {
+        border: 2px solid transparent;
+        background-color: black;
+        color: #eee;
+        border-radius: 1em;
+        width: 10em;
+        padding: 1em;
+        text-align: center;
+        position: relative;
+        top: 5em;
+        transition: border-width 0.3s ease;
+        margin: auto;
+
+
+    }
+
+
+
+    .menu a:hover {
+        transform: scale(1.2);
+    }
+
+
+
+
+
+    .beavisline {
+        display: block;
+        margin: auto;
+        position: relative;
+        bottom: 1em;
+        width: 95%;
+    }
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 768px) {
+
+    body {
+        font-size: large;
+    }
+
+    .mtvlogo {
+        width: 400px;
+        height: auto;
+    }
+
+    header {
+        padding: 7em;
+
+    }
+
+    .info {
+        background-color: rgb(0, 247, 255);
+        padding: 1em;
+        border-radius: 2em;
+        width: 40%;
+        margin: 4%;
+        position: relative;
+        left: 10%;
+        border: 5px dashed rgb(0, 171, 250);
+        color: rgb(211, 24, 117);
+    }
+
+    .mtvlogo2 {
+        position: absolute;
+        top: 90%;
+        left: 73%;
+        transform: translate(-50%, -50%);
+
+    }
+
+    .rodic {
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .tvroba {
+        background-color: rgb(165, 106, 219);
+        padding: 1em;
+        border-radius: 2em;
+        width: 40%;
+        margin: 1%;
+
+        border: 5px dashed rgb(128, 76, 176);
+        margin-left: auto;
+        margin-right: 25%;
+    }
+
+    .vliv {
+        background-color: rgb(112, 28, 191);
+        padding: 1em;
+        border-radius: 2em;
+        width: 70%;
+        margin: 5em auto;
+        border: 5px dashed rgb(97, 24, 165);
+        margin-right: auto;
+        margin-left: 5%;
+    }
+
+    .a {
+        background-color: rgb(93, 18, 163);
+        padding: 1em;
+        margin: 0.5em;
+        border-radius: 2.25em;
+        width: 50%;
+        margin-left: 10%;
+        border: 5px dashed antiquewhite;
+    }
+
+    .b {
+        background-color: rgb(93, 18, 163);
+        padding: 1em;
+        margin: 0.5em;
+        margin-left: 35%;
+        width: 50%;
+        border-radius: 2.25em;
+        border: 5px dashed antiquewhite;
+    }
+
+    .c {
+        background-color: rgb(93, 18, 163);
+        padding: 1em;
+        margin: 0.5em;
+        border-radius: 2.25em;
+        width: 50%;
+        margin-left: 10%;
+        border: 5px dashed antiquewhite;
+    }
+
+    .historie {
+        width: 94%;
+        border-radius: 1em;
+        margin: auto;
+        padding: 3em;
+
+    }
+
+
+
+
+
+    .menu {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        gap: 2em;
+    }
+
+    .menu a {
+        border: 2px solid transparent;
+        background-color: black;
+        color: #eee;
+        border-radius: 1em;
+        width: 10em;
+        padding: 1em;
+        text-align: center;
+        position: relative;
+        top: 5em;
+        transition: border-width 0.3s ease;
+        margin: auto;
+
+
+    }
+
+
+
+    .menu a:hover {
+        transform: scale(1.2);
+    }
+
+
+
+    .obal {
+        border: 5px pink solid;
+        width: 95%;
+        padding: 2em;
+        margin: 3em auto;
+        border-radius: 2em;
+        background-image: url("../img/pozadi4.png");
+        position: relative;
+        top: 5em;
+    }
+
+    .beavisline {
+        display: block;
+        margin: auto;
+        margin-top: 7em;
+        margin-bottom: 0em;
+        width: 95%;
+
+    }
+
+
+
+
+}

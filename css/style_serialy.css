@@ -1,0 +1,123 @@
+body {
+    background-color: black;
+    color: antiquewhite;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 1.5;
+    
+}
+
+footer{
+    padding: 5em;
+    background-color: rgb(31, 31, 31);
+    font-size: medium;
+    text-align: center;
+    margin-top: 0.1em;
+}
+
+
+.menu a{text-decoration: none;}
+
+
+
+
+
+
+@media screen and (min-width: 1920px) {}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 768px) {
+
+      header{background-repeat: no-repeat;
+        background-size: cover;
+
+        padding: 5em;
+        text-align: center;}
+
+    .hlava_1 {
+        background-image: url("../img/mtvdowntown_background.png");
+        
+    }
+
+    .hlava_2{
+        background-image: url("../img/daria_background.jpg");
+        background-position: center;
+        padding: 20em;
+    }
+
+     .hlava_3{
+        background-image: url("../img/beavis_background.png");
+        background-position: center;
+        padding: 12em;
+    }
+
+
+    .logo {
+        text-align: center;
+        width: 1000px;
+        margin: auto;
+
+    }
+
+    .logo_2 {
+        text-align: center;
+        width: 300px;
+        margin: auto;
+        margin-left: 62em;
+
+    }
+
+    .logo_3{
+        text-align: center;
+        width: 400px;
+        margin: auto;
+    }
+
+    .container {
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        
+
+        padding: 5em;
+        text-align: center;
+    }
+
+    .a,
+    .b {
+        font-size: large;
+        background-color: rgb(27, 27, 27);
+        padding: 1em;
+        border-radius: 0.5em;
+        margin: 3em;
+        width: 30%;
+
+    }
+
+    .c {
+        font-size: large;
+        background-color: rgb(27, 27, 27);
+        padding: 1em;
+        border-radius: 0.5em;
+        margin: 3em;
+        width: 35%;
+        margin: auto;
+    }
+
+    h3{
+        text-align: center;
+    }
+}
