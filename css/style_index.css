@@ -48,22 +48,28 @@ a {
 
 @media screen and (max-width: 1920px) {
     body {
-        font-size: large;
+        font-size: small;
 
     }
 
     .mtvlogo {
-        width: 320px;
+        width: 100%;
+        max-width: 320px;
         height: auto;
+        margin-bottom: 1.5em;
 
     }
 
     header {
-        padding: 6em;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding: 2em 1em;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        width: 100%;
 
 
     }
@@ -90,8 +96,12 @@ a {
     }
 
     .mtvlogo2 {
-        width: 300px;
+        width: 100%;
+        max-width: 200px;
         height: auto;
+        justify-content: center;
+        margin: auto;
+        align-items: center;
     }
 
     .obal {
@@ -131,7 +141,7 @@ a {
         padding: 1em;
         margin: 0.5em auto;
         border-radius: 2.25em;
-        width: 88%;
+        width: 95%;
         border: 5px dashed antiquewhite;
     }
 
@@ -153,8 +163,9 @@ a {
     .menu {
         display: flex;
         flex-direction: column;
+        align-items: center;
         width: 100%;
-        gap: 2em;
+        gap: 0.8em;
     }
 
     .menu a {
@@ -162,11 +173,10 @@ a {
         background-color: black;
         color: #eee;
         border-radius: 1em;
-        width: 10em;
-        padding: 1em;
+        width: 85%;
+        max-width: 250px;
+        padding: 0.8em;
         text-align: center;
-        position: relative;
-        top: 5em;
         transition: border-width 0.3s ease;
         margin: auto;
 
@@ -185,10 +195,11 @@ a {
 
     .beavisline {
         display: block;
-        margin: auto;
+        margin: 2em auto;
         position: relative;
         bottom: 1em;
         width: 95%;
+        max-width: 600px;
     }
 
 
@@ -199,202 +210,3 @@ a {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*--------------------------------------------------------------------------------------------------------------*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (min-width: 768px) {
-
-    body {
-        font-size: large;
-    }
-
-    .mtvlogo {
-        width: 400px;
-        height: auto;
-    }
-
-    header {
-        padding: 7em;
-
-    }
-
-    .info {
-        background-color: rgb(0, 247, 255);
-        padding: 1em;
-        border-radius: 2em;
-        width: 40%;
-        margin: 4%;
-        position: relative;
-        left: 10%;
-        border: 5px dashed rgb(0, 171, 250);
-        color: rgb(211, 24, 117);
-    }
-
-    .mtvlogo2 {
-        position: absolute;
-        top: 90%;
-        left: 73%;
-        transform: translate(-50%, -50%);
-
-    }
-
-    .rodic {
-        justify-content: center;
-        align-items: flex-start;
-    }
-
-    .tvroba {
-        background-color: rgb(165, 106, 219);
-        padding: 1em;
-        border-radius: 2em;
-        width: 40%;
-        margin: 1%;
-
-        border: 5px dashed rgb(128, 76, 176);
-        margin-left: auto;
-        margin-right: 25%;
-    }
-
-    .vliv {
-        background-color: rgb(112, 28, 191);
-        padding: 1em;
-        border-radius: 2em;
-        width: 70%;
-        margin: 5em auto;
-        border: 5px dashed rgb(97, 24, 165);
-        margin-right: auto;
-        margin-left: 5%;
-    }
-
-    .a {
-        background-color: rgb(93, 18, 163);
-        padding: 1em;
-        margin: 0.5em;
-        border-radius: 2.25em;
-        width: 50%;
-        margin-left: 10%;
-        border: 5px dashed antiquewhite;
-    }
-
-    .b {
-        background-color: rgb(93, 18, 163);
-        padding: 1em;
-        margin: 0.5em;
-        margin-left: 35%;
-        width: 50%;
-        border-radius: 2.25em;
-        border: 5px dashed antiquewhite;
-    }
-
-    .c {
-        background-color: rgb(93, 18, 163);
-        padding: 1em;
-        margin: 0.5em;
-        border-radius: 2.25em;
-        width: 50%;
-        margin-left: 10%;
-        border: 5px dashed antiquewhite;
-    }
-
-    .historie {
-        width: 94%;
-        border-radius: 1em;
-        margin: auto;
-        padding: 3em;
-
-    }
-
-
-
-
-
-    .menu {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        gap: 2em;
-    }
-
-    .menu a {
-        border: 2px solid transparent;
-        background-color: black;
-        color: #eee;
-        border-radius: 1em;
-        width: 10em;
-        padding: 1em;
-        text-align: center;
-        position: relative;
-        top: 5em;
-        transition: border-width 0.3s ease;
-        margin: auto;
-
-
-    }
-
-
-
-    .menu a:hover {
-        transform: scale(1.2);
-    }
-
-
-
-    .obal {
-        border: 5px pink solid;
-        width: 95%;
-        padding: 2em;
-        margin: 3em auto;
-        border-radius: 2em;
-        background-image: url("../img/pozadi4.png");
-        position: relative;
-        top: 5em;
-    }
-
-    .beavisline {
-        display: block;
-        margin: auto;
-        margin-top: 7em;
-        margin-bottom: 0em;
-        width: 95%;
-
-    }
-
-
-
-
-}
