@@ -107,8 +107,8 @@ a {
     .obal {
         border: 5px pink solid;
         width: 95%;
-        padding: 2em;
-        margin: 3em auto;
+        padding: 1.5em;
+        margin:auto;
         border-radius: 2em;
         background-image: url("../img/pozadi4.png");
         position: relative;
@@ -129,7 +129,7 @@ a {
         background-color: rgb(112, 28, 191);
         padding: 1em;
         border-radius: 2em;
-        width: 80%;
+        width: 90%;
         margin: 5em auto;
         border: 5px dashed rgb(97, 24, 165);
     }
@@ -151,7 +151,7 @@ a {
         width: 94%;
         border-radius: 1em;
         margin: auto;
-        padding: 3em;
+        padding: 1.5em;
         margin-top: 0.1em;
 
     }
@@ -195,11 +195,223 @@ a {
 
     .beavisline {
         display: block;
-        margin: 2em auto;
+        margin: 1.5em auto;
+        margin-top: 1.3em;
+        margin-bottom: 0.4em;
+        width: 90%;
+        max-width: 700px;
+    }
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 768px) {
+
+    body {
+        font-size: large;
+    }
+
+    .mtvlogo {
+        width: 400px;
+        height: auto;
+    }
+
+    header {
+        padding: 7em;
+
+    }
+
+    .info {
+        background-color: rgb(0, 247, 255);
+        padding: 1em;
+        border-radius: 2em;
+        width: 40%;
+        margin: 4%;
         position: relative;
-        bottom: 1em;
+        left: 10%;
+        border: 5px dashed rgb(0, 171, 250);
+        color: rgb(211, 24, 117);
+    }
+
+    .mtvlogo2 {
+        position: absolute;
+        top: 80%;
+        left: 150%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+        justify-content: center;
+        margin: auto;
+        align-items: center;
+
+    }
+
+    .rodic {
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .tvroba {
+        background-color: rgb(165, 106, 219);
+        padding: 1em;
+        border-radius: 2em;
+        width: 40%;
+        margin: 1%;
+
+        border: 5px dashed rgb(128, 76, 176);
+        margin-left: auto;
+        margin-right: 25%;
+    }
+
+    .vliv {
+        background-color: rgb(112, 28, 191);
+        padding: 1em;
+        border-radius: 2em;
+        width: 70%;
+        margin: 5em auto;
+        border: 5px dashed rgb(97, 24, 165);
+        margin-right: auto;
+        margin-left: 5%;
+    }
+
+    .a {
+        background-color: rgb(93, 18, 163);
+        padding: 1em;
+        margin: 0.5em;
+        border-radius: 2.25em;
+        width: 50%;
+        margin-left: 10%;
+        border: 5px dashed antiquewhite;
+    }
+
+    .b {
+        background-color: rgb(93, 18, 163);
+        padding: 1em;
+        margin: 0.5em;
+        margin-left: 35%;
+        width: 50%;
+        border-radius: 2.25em;
+        border: 5px dashed antiquewhite;
+    }
+
+    .c {
+        background-color: rgb(93, 18, 163);
+        padding: 1em;
+        margin: 0.5em;
+        border-radius: 2.25em;
+        width: 50%;
+        margin-left: 10%;
+        border: 5px dashed antiquewhite;
+    }
+
+    .historie {
         width: 95%;
-        max-width: 600px;
+        border-radius: 1em;
+        margin: auto;
+        padding: 3em;
+
+    }
+
+
+
+
+
+    .menu {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        gap: 2em;
+       
+    }
+
+    .menu a {
+        border: 2px solid transparent;
+        background-color: black;
+        color: #eee;
+        border-radius: 1em;
+        width: 10em;
+        padding: 1em;
+        text-align: center;
+        position: relative;
+        top: 5em;
+        transition: border-width 0.3s ease;
+        margin: auto;
+
+
+    }
+
+
+
+    .menu a:hover {
+        transform: scale(1.2);
+    }
+
+
+
+    .obal {
+        border: 5px pink solid;
+        width: 95%;
+        padding: 2em;
+        margin-top: 1em ;
+        margin: auto;
+        border-radius: 2em;
+        background-image: url("../img/pozadi4.png");
+        position: relative;
+        top: 5em;
+    }
+
+    .beavisline {
+        display: block;
+        margin: 3.5em auto;
+        margin-top:3.5em ;
+        margin-bottom: -1.3em;
+        width: 95%;
+        max-width: 1920px;
+
     }
 
 
