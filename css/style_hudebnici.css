@@ -40,13 +40,13 @@ h6 {
 @media screen and (max-width: 1920px) {
 
 
-    .hlava {
+    header {
         background-image: url("../img/michael_jackson_background.png");
         padding: 5em;
         text-align: center;
         background-position: center;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: 200%;
     }
 
 
