@@ -1,8 +1,16 @@
+
+
 body {
     background-color: black;
     color: antiquewhite;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     overflow-x: hidden;
+    margin: 0;
+}
+
+/* Tímto zajistíme, že se šířky nebudou kvůli paddingu rozjíždět */
+*, *:before, *:after {
+    box-sizing: border-box;
 }
 
 footer {
@@ -29,9 +37,9 @@ header {
     background-image: url("../img/pozadi3.png");
 }
 
-@media screen and (max-width: 1920px) {
-    header {
 
+@media screen and (max-width: 767px) {
+    header {
         background-position: center;
         padding: 2em 1em;
         display: flex;
@@ -39,11 +47,7 @@ header {
         justify-content: center;
         align-items: center;
         width: 100%;
-
-
     }
-
-
 
     .mtvlogo {
         width: 100%;
@@ -51,56 +55,32 @@ header {
         height: auto;
         margin: auto;
         text-align: center;
-
     }
 
-    .a {
+    /* Na mobilu chceme boxy na střed a přes celou šířku */
+    .a, .b, .c {
         background-image: url("../img/pozadi_t_2.png");
-        width: 55%;
-        margin: 0.5em auto;
+        width: 90%;
+        max-width: 500px;
+        margin: 1.5em auto;
         border: 5px solid antiquewhite;
         padding: 2em;
         border-radius: 2em;
-
     }
 
-    .b {
-        background-image: url("../img/pozadi_t_2.png");
-        width: 55%;
-        margin: 0.5em auto;
-        border: 5px solid antiquewhite;
-        padding: 2em;
-        border-radius: 2em;
-
+    .obal_a {
+        display: flex;
+        flex-direction: column;
     }
 
-    .c {
-        background-image: url("../img/pozadi_t_2.png");
-        width: 55%;
-        margin: 0.5em auto;
-        border: 5px solid antiquewhite;
-        padding: 2em;
-        border-radius: 2em;
-
+    /* Na mobilu musíme smazat záporné marginy, aby prvky nebyly přes sebe */
+    .obal_b, .obal_c {
+        margin-top: 0 !important;
     }
-
-    .obal_a {display: flex;
-    flex-direction: column;}
-
-    .obal_b {
-        margin-top: -10em;
-    }
-
-    .obal_c {
-        margin-top: -10em;
-    }
-
-
 
     * {
         line-height: 1.5em;
         font-size: small;
-
     }
 
     h2 {
@@ -133,10 +113,7 @@ header {
         text-align: center;
         transition: border-width 0.3s ease;
         margin: auto;
-
     }
-
-
 
     .menu a:hover {
         transform: scale(1.2);
@@ -153,11 +130,9 @@ header {
         display: flex;
         flex-direction: row;
         gap: 0.5em;
-
     }
 
     .menu_b a {
-
         color: azure;
         font-size: medium;
         border: 3px solid rgb(48, 48, 48);
@@ -169,108 +144,42 @@ header {
         text-decoration: none;
         text-align: center;
         transition: transform 0.5s ease-in-out;
-        display:
-            flex;
+        display: flex;
     }
 
     .menu_b a:hover {
         transform: scale(1.2);
     }
 
-    .daria_a {
+    
+    .daria_a, .alex_a, .beavis_a {
         width: 100%;
-        max-width: 350px;
+        max-width: 300px;
         height: auto;
         border-radius: 5px;
-        margin: auto;
-        transform: scaleX(-1);
-        transition: transform 0.5s ease-in-out;
+        margin: 1em auto;
         display: block;
-        margin-top: 1em;
-        margin-bottom: 13em;
-
-
+        position: static; 
+        transform: none;
     }
 
-    .daria_a:hover {
-
-        transform: scaleX(-1) scaleY(1.2);
-
-
-    }
-
-    .alex_a {
-         width: 100%;
-        max-width: 350px;
-        height: auto;
-        border-radius: 5px;
-        margin: auto;
-        transition: transform 0.5s ease-in-out;
-        display: block;
-        margin-top: 1em;
-        margin-bottom: 13em;
-
-    }
-
-    .alex_a:hover {
-
-        transform: scale(1.2);
-
-
-    }
-
-    .beavis_a {
-        width: 100%;
-        max-width: 350px;
-        height: auto;
-        border-radius: 5px;
-        margin: auto;
-        transition: transform 0.5s ease-in-out;
-        display: block;
-        margin-top: 1em;
-        margin-bottom: 13em;
-
-    }
-
-    .beavis_a:hover {
-
-        transform: scaleX(1.5);
-
-    }
-
+    .daria_a { transform: scaleX(-1); }
+    .daria_a:hover { transform: scaleX(-1) scale(1.1); }
+    .alex_a:hover, .beavis_a:hover { transform: scale(1.1); }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-/*-------------------------------------------------------------------------------------------------------*/
-
-
-
-
-
-
-
+/* pro PC */
 @media screen and (min-width: 768px) {
-    .header {
+    header {
         background-image: url("../img/pozadi3.png");
         padding: 5em;
         text-align: center;
         margin: auto;
+        display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
     }
-
-
 
     .mtvlogo {
         width: 100%;
@@ -278,15 +187,13 @@ header {
         height: auto;
         margin: auto;
         text-align: center;
-
     }
-
-
 
     .obal_a {
         width: fit-content;
     }
 
+    /* Tady tvoje původní záporné marginy na desktopu fungovat budou */
     .obal_b {
         margin-top: -21em;
     }
@@ -302,7 +209,6 @@ header {
         border: 5px solid antiquewhite;
         padding: 2em;
         border-radius: 2em;
-
     }
 
     .b {
@@ -312,9 +218,7 @@ header {
         border: 5px solid antiquewhite;
         padding: 2em;
         border-radius: 2em;
-
     }
-
 
     .c {
         background-image: url("../img/pozadi_t_2.png");
@@ -323,13 +227,11 @@ header {
         border: 5px solid antiquewhite;
         padding: 2em;
         border-radius: 2em;
-
     }
 
     * {
         line-height: 1.5em;
         font-size: large;
-
     }
 
     h2 {
@@ -338,8 +240,6 @@ header {
 
     .container {
         display: block;
-        justify-content: space-between;
-        align-items: flex-start;
         width: 100%;
         max-width: 1400px;
         margin: 0 auto;
@@ -355,7 +255,6 @@ header {
         justify-content: center;
         align-items: center;
         margin-bottom: 2em;
-
     }
 
     .menu a {
@@ -370,11 +269,7 @@ header {
         top: 3em;
         transition: border-width 0.3s ease;
         margin: auto;
-
-
     }
-
-
 
     .menu a:hover {
         transform: scale(1.2);
@@ -386,29 +281,26 @@ header {
         border-radius: 1em;
         background-image: url(../img/pozadi2.png);
         margin: 3em;
-        width: 10em;
+        width: 12em;
         max-width: 280px;
         display: flex;
         flex-direction: column;
         position: absolute;
         left: 70%;
-        top: 90%;
+        top: 80%;
         text-align: center;
         justify-content: center;
         align-items: center;
-
-
     }
 
     .menu_b a {
-
         color: azure;
         font-size: medium;
         border: 3px solid rgb(48, 48, 48);
         border-radius: 0.25em;
         background-color: rgb(0, 0, 0);
         padding: 0.45em;
-        width: 70%;
+        width: 80%;
         text-decoration: none;
         text-align: center;
         transition: transform 0.5s ease-in-out;
@@ -423,38 +315,32 @@ header {
         width: 450px;
         height: auto;
         position: relative;
-        left: 1%;
-        top: 1em;
+        left: 12%;
+        top: 3em;
         border-radius: 5px;
         transform: translate(-50%, -50%) scaleX(-1);
         transition: transform 0.5s ease-in-out;
-
+        display: block;
     }
 
     .daria_a:hover {
-
         transform: translate(-50%, -50%) scaleX(-1) scaleY(1.2);
-
-
     }
 
     .alex_a {
         width: 450px;
         height: auto;
         position: relative;
-        left: 51%;
+        left: 81%;
         top: -30em;
         border-radius: 5px;
         transform: translate(-50%, -50%);
         transition: transform 0.5s ease-in-out;
-
+        display: block;
     }
 
     .alex_a:hover {
-
         transform: translate(-50%, -50%) scale(1.2);
-
-
     }
 
     .beavis_a {
@@ -467,12 +353,10 @@ header {
         border-radius: 5px;
         transform: translate(-50%, -50%);
         transition: transform 0.5s ease-in-out;
-
+        display: block;
     }
 
     .beavis_a:hover {
-
         transform: translate(-50%, -50%) scaleX(1.5);
-
     }
 }

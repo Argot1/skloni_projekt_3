@@ -3,6 +3,8 @@ body {
     color: antiquewhite;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     line-height: 1.5;
+    overflow-x: hidden;
+    font-size: medium;
     
 }
 
@@ -17,12 +19,109 @@ footer{
 
 .menu a{text-decoration: none;}
 
+ header{background-repeat: no-repeat;
+        background-size: cover;
+
+        padding: 5em;
+        text-align: center;}
+
+
+
+.hlava_1, .hlava_2, .hlava_3 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 3em 1em; /* Menší padding zajistí, že se pozadí přizpůsobí mobilu */
+    position: relative; /* DŮLEŽITÉ: základna pro fixní/absolutní pozici tlačítka */
+    min-height: 150px; /* Aby měla hlavička u Darie pěknou výšku, i když v ní není logo */
+}
+
+
+
+        .hlava_1 {
+         background-image: url("../img/mtvdowntown_background.png");
+        
+        
+    }
+
+    .hlava_2{
+        background-image: url("../img/daria_background.jpg");
+        }
+        
+
+     .hlava_3{
+        background-image: url("../img/beavis_background.png");
+        
+    }
+
+
+
+
+.logo, .logo_3 {
+    display: block;
+    width: 100%;
+    max-width: 340px;
+    min-width: 180px;
+    height: auto;
+    margin: 0 auto 1em auto; /* Vycentruje a udělá místo pod logem */
+}
+
+.return a {
+    background-color: rgb(31, 31, 31);
+    padding: 0.6em 1.2em;
+    border-radius: 0.5em;
+    display: inline-block;
+    font-size: medium;
+    text-decoration: none;
+    color: antiquewhite;
+    margin-bottom: 3em;
+    margin-right: 35em;
+}
+   
+
+
+ 
+
+    .container {
+        display: block;
+        margin: auto;
+        justify-content: center;
+        padding: 1em;
+        text-align: center;
+    }
+
+    .a,
+    .b {
+        font-size: medium;
+        background-color: rgb(27, 27, 27);
+        padding: 1em;
+        border-radius: 0.5em;
+        margin: 0.5em auto;
+        width: 95%;
+
+    }
+
+    .c {
+        font-size: medium;
+        background-color: rgb(27, 27, 27);
+        padding: 1em;
+        border-radius: 0.5em;
+        margin: 0.5em auto;
+        width: 93%;
+    }
+
+    h3{
+        text-align: center;
+    }
+
+    
+
+   
 
 
 
 
 
-@media screen and (min-width: 1920px) {}
 
 
 
@@ -36,10 +135,13 @@ footer{
 
 
 
-
+/* pro počítače*/
 
 
 @media screen and (min-width: 768px) {
+    body{
+        font-size: large;
+    }
 
       header{background-repeat: no-repeat;
         background-size: cover;
@@ -56,6 +158,7 @@ footer{
         background-image: url("../img/daria_background.jpg");
         background-position: center;
         padding: 20em;
+        background-size: cover;
     }
 
      .hlava_3{
@@ -119,5 +222,18 @@ footer{
 
     h3{
         text-align: center;
+    }
+
+    .return a{
+         background-color: rgb(44, 44, 44);
+        padding: 1em;
+        border-radius: 0.5em;
+        width: 3em;
+        position: fixed;
+        top: 2em;
+        left: 3em;
+        font-size: large;
+        text-decoration: none;
+        color: antiquewhite;
     }
 }
