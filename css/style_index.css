@@ -270,41 +270,6 @@ a {
         margin: auto;
     }
 
-        .hlava_1 {
-        background-image: url("../img/mtvdowntown_background.png");
-        
-        padding: 20em;
-        background-size: cover;
-        
-        
-    }
-
-    .hlava_2{
-        background-image: url("../img/daria_background.jpg");
-        background-position: center;
-        padding: 20em;
-        background-size: cover;
-    }
-
-     .hlava_3{
-        background-image: url("../img/beavis_background.png");
-        background-position: center;
-        padding: 12em;
-    }
-
-
- .return a{
-         background-color: rgb(31, 31, 31);
-        padding: 1em;
-        border-radius: 0.5em;
-        width: 6em;
-        position: relative;
-        top: 15em;
-        right: 16em;
-        font-size: large;
-        text-decoration: none;
-        color: antiquewhite;
-    }
 
 
 

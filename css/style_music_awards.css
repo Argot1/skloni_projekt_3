@@ -1,0 +1,247 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.menu .menu_button a{
+    background-color: red;
+}
+ .mtvlogo {
+        display: block;
+        margin: auto;
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+    }
+body {
+    background-color: black;
+    margin: 0;
+    overflow-x: hidden;
+    color: antiquewhite;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+}
+
+h2 {
+    margin: 1em auto;
+    text-align: center;
+}
+
+h4 {
+    background-color: rgb(0, 0, 0, 0.2);
+    border-radius: 0.3em;
+    width: fit-content;
+    padding: 0.3em;
+    text-align: center;
+    margin: auto;
+}
+
+header {
+    background-image: url("../img/pozadi_awards.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 2em 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 0.8em;
+    }
+
+    .menu a {
+        border: 2px solid transparent;
+        background-color: black;
+        color: #eee;
+        border-radius: 1em;
+        width: 85%;
+        max-width: 250px;
+        padding: 0.8em;
+        text-align: center;
+        transition: border-width 0.3s ease;
+        margin: auto;
+
+
+    }
+
+
+
+    .menu a:hover {
+        transform: scale(1.2);
+    }
+
+
+     .info_a {
+        padding: 1em;
+        margin: 3em auto;
+        background-color: aliceblue;
+        color: black;
+        width: 95%;
+        border-radius: 2em;
+    }
+
+    .info_b {
+        width: 95%;
+        padding: 1em;
+        margin: 3em auto;
+        background-color: aliceblue;
+        color: black;
+        border-radius: 2em;
+    }
+
+    .highlights {
+        width: 95%;
+        padding: 1em;
+        margin: 3em auto;
+        background-color: aliceblue;
+        color: black;
+        border-radius: 2em;
+    }
+    .gaga {
+        margin: 3em auto;
+        width: 200px;
+        box-shadow: 5px 10px 20px;
+        border-radius: 1em;
+        display: block;
+    }
+    .kanye{
+        margin: 3em auto;
+        width: 200px;
+        box-shadow: 5px 10px 20px;
+        border-radius: 1em;
+        display: block;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*pro PC*/
+
+@media screen and (min-width:768px) {
+    header {
+        background-image: url("../img/pozadi_awards.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding: 4em 1em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    body {
+        font-size: large;
+    }
+
+    .mtvlogo {
+        display: block;
+        margin: auto;
+        width: 100%;
+        max-width: 700px;
+        height: auto;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        gap: 2em;
+
+    }
+
+    .menu a {
+        border: 2px solid transparent;
+        background-color: black;
+        color: #eee;
+        border-radius: 1em;
+        width: 10em;
+        padding: 1em;
+        text-align: center;
+        position: relative;
+        top: 2em;
+        transition: border-width 0.3s ease;
+        margin: auto;
+
+
+    }
+
+ 
+
+
+
+    .menu a:hover {
+        transform: scale(1.2);
+    }
+
+    .info_a {
+        padding: 3em;
+        margin: 3em auto;
+        background-color: aliceblue;
+        color: black;
+        width: 70%;
+        border-radius: 2em;
+    }
+
+    .info_b {
+        width: 50%;
+        padding: 3em;
+        margin: 3em auto;
+        background-color: aliceblue;
+        color: black;
+        border-radius: 2em;
+    }
+
+    .highlights {
+        width: 50%;
+        padding: 3em;
+        margin: 3em auto;
+        background-color: aliceblue;
+        color: black;
+        border-radius: 2em;
+    }
+
+    .gaga {
+        position: absolute;
+        top: 220%;
+        left: 80%;
+        width: 300px;
+        box-shadow: 5px 10px 20px;
+        border-radius: 1em;
+    }
+    .kanye{
+        position: absolute;
+        top: 190%;
+        left: 5%;
+        width: 300px;
+        box-shadow: 5px 10px 20px;
+        border-radius: 1em;
+    }
+
+}

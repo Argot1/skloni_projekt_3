@@ -180,10 +180,17 @@ header {
     }
 
     .menu a {
+         border: 2px solid transparent;
+        background-color: black;
+        color: #eee;
+        border-radius: 1em;
         width: 10em;
         padding: 1em;
+        text-align: center;
         position: relative;
-        top: 3em;
+        top: 5em;
+        transition: border-width 0.3s ease;
+        margin: auto;
     }
 
    
