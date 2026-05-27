@@ -130,6 +130,9 @@ header {
         display: flex;
         flex-direction: row;
         gap: 0.5em;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
     }
 
     .menu_b a {
@@ -140,15 +143,19 @@ header {
         background-color: rgb(0, 0, 0);
         padding: 0.25em;
         width: 100%;
-        margin: 0;
+        height: 4em;
+        margin: 0 auto;
         text-decoration: none;
         text-align: center;
         transition: transform 0.5s ease-in-out;
         display: flex;
+        justify-content: center;
+        align-items: center;
+        
     }
 
     .menu_b a:hover {
-        transform: scale(1.2);
+        transform: scale(1.1);
     }
 
     

@@ -1,3 +1,9 @@
+
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 body {
     background-color: black;
     color: antiquewhite;
@@ -83,11 +89,14 @@ footer{
  
 
     .container {
-        display: block;
+        
         margin: auto;
-        justify-content: center;
+        display: flex;
+        flex-direction: column;
         padding: 1em;
         text-align: center;
+        justify-content: center;
+        align-items: center;
     }
 
     .a,
@@ -96,8 +105,9 @@ footer{
         background-color: rgb(27, 27, 27);
         padding: 1em;
         border-radius: 0.5em;
-        margin: 0.5em auto;
-        width: 95%;
+        margin: 0.5em 0;
+        max-width: 95%;
+        width: 100%;
 
     }
 
@@ -191,10 +201,10 @@ footer{
 
     .container {
         display: flex;
+        flex-direction: row;
         margin: auto;
         justify-content: center;
-        
-
+        align-items: baseline;
         padding: 5em;
         text-align: center;
     }
@@ -228,7 +238,7 @@ footer{
          background-color: rgb(44, 44, 44);
         padding: 1em;
         border-radius: 0.5em;
-        width: 3em;
+        width: 6em;
         position: fixed;
         top: 2em;
         left: 3em;
