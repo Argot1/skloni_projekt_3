@@ -1,5 +1,7 @@
 
 
+
+
 body {
     background-color: black;
     color: antiquewhite;
@@ -8,7 +10,7 @@ body {
     margin: 0;
 }
 
-/* Tímto zajistíme, že se šířky nebudou kvůli paddingu rozjíždět */
+
 *, *:before, *:after {
     box-sizing: border-box;
 }
@@ -57,7 +59,7 @@ header {
         text-align: center;
     }
 
-    /* Na mobilu chceme boxy na střed a přes celou šířku */
+   
     .a, .b, .c {
         background-image: url("../img/pozadi_t_2.png");
         width: 90%;
@@ -73,7 +75,6 @@ header {
         flex-direction: column;
     }
 
-    /* Na mobilu musíme smazat záporné marginy, aby prvky nebyly přes sebe */
     .obal_b, .obal_c {
         margin-top: 0 !important;
     }
@@ -175,6 +176,42 @@ header {
     .alex_a:hover, .beavis_a:hover { transform: scale(1.1); }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* pro PC */
 @media screen and (min-width: 768px) {
     header {
@@ -195,12 +232,59 @@ header {
         margin: auto;
         text-align: center;
     }
-
-    .obal_a {
-        width: fit-content;
+  .menu_b {
+        border: 3px solid antiquewhite;
+        padding: 0.5em;
+        border-radius: 1em;
+        background-image: url(../img/pozadi2.png);
+        margin: 3em;
+        width: 100%;
+        max-width: 12em;
+        max-height: 300px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        right: 10%;
+        top: 50%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
     }
 
-    /* Tady tvoje původní záporné marginy na desktopu fungovat budou */
+    .menu_b a {
+        color: azure;
+        font-size: medium;
+        border: 3px solid rgb(48, 48, 48);
+        border-radius: 0.25em;
+        background-color: rgb(0, 0, 0);
+        padding: 0.45em;
+        width: 100%;
+        max-width: 12em;
+        max-height: 6em;
+        text-decoration: none;
+        text-align: center;
+        transition: transform 0.5s ease-in-out;
+        margin: auto;
+    }
+
+    .obal_a {
+        
+        display: flex;
+        flex-direction: row-reverse;
+        margin-bottom: 15em;
+    }
+.daria_a {
+        width: 450px;
+        height: auto;
+        position: relative;
+        left: 13em;
+        top: 6em;
+        border-radius: 5px;
+        transform: translate(-50%, -50%) scaleX(-1);
+        transition: transform 0.5s ease-in-out;
+        
+    }
+    
     .obal_b {
         margin-top: -21em;
     }
@@ -211,7 +295,10 @@ header {
 
     .a {
         background-image: url("../img/pozadi_t_2.png");
-        width: 55%;
+        position: relative;
+        right: 10%;
+        max-width: 55%;
+        min-width: 38%;
         margin: 3em;
         border: 5px solid antiquewhite;
         padding: 2em;
@@ -245,8 +332,14 @@ header {
         font-size: 1.75em;
     }
 
+
+    .menu_b a:hover {
+        transform: scale(1.2);
+    }
     .container {
-        display: block;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
         width: 100%;
         max-width: 1400px;
         margin: 0 auto;
@@ -276,59 +369,16 @@ header {
         top: 3em;
         transition: border-width 0.3s ease;
         margin: auto;
+        
     }
 
     .menu a:hover {
         transform: scale(1.2);
     }
 
-    .menu_b {
-        border: 3px solid antiquewhite;
-        padding: 0.5em;
-        border-radius: 1em;
-        background-image: url(../img/pozadi2.png);
-        margin: 3em;
-        width: 12em;
-        max-width: 280px;
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        left: 70%;
-        top: 80%;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-    }
+  
 
-    .menu_b a {
-        color: azure;
-        font-size: medium;
-        border: 3px solid rgb(48, 48, 48);
-        border-radius: 0.25em;
-        background-color: rgb(0, 0, 0);
-        padding: 0.45em;
-        width: 80%;
-        text-decoration: none;
-        text-align: center;
-        transition: transform 0.5s ease-in-out;
-        margin: auto;
-    }
-
-    .menu_b a:hover {
-        transform: scale(1.2);
-    }
-
-    .daria_a {
-        width: 450px;
-        height: auto;
-        position: relative;
-        left: 12%;
-        top: 3em;
-        border-radius: 5px;
-        transform: translate(-50%, -50%) scaleX(-1);
-        transition: transform 0.5s ease-in-out;
-        display: block;
-    }
+    
 
     .daria_a:hover {
         transform: translate(-50%, -50%) scaleX(-1) scaleY(1.2);
