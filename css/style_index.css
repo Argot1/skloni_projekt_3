@@ -247,29 +247,6 @@ a {
 
 
 
-   .logo {
-        width: 100%;
-        max-width: 360px;
-        height: auto;
-        margin: auto;
-        text-align: center;
-
-    }
-
-    .logo_2 {
-        text-align: center;
-        width: 300px;
-        margin: auto;
-        margin-left: 62em;
-
-    }
-
-    .logo_3{
-        text-align: center;
-        width: 400px;
-        margin: auto;
-    }
-
 
 
 
@@ -312,7 +289,7 @@ a {
 
     .mtvlogo2 {
         position: absolute;
-        top: 80%;
+        top: 1536px;
         left: 70%;
         transform: translate(-50%, -50%);
         width: 100%;
